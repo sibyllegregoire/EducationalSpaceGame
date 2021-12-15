@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game_Flow.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Game_Flow.cs" Line="63" Column="8" />
+      <File FileName="Assets/Scripts/Select_FoS.cs" Line="9" Column="6" />
+      <File FileName="Assets/Scripts/winLose.cs" Line="31" Column="9" />
+      <File FileName="Assets/Scripts/Image_Changer.cs" Line="31" Column="52" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9b5523cc-e905-4093-9655-44d1ffefc6d5" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/mariajosealmarioescorcia/Documents/Polimi /EducationalGame/Assets/Scripts/Select_FoS.cs" relfile="Assets/Scripts/Select_FoS.cs" line="17" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
