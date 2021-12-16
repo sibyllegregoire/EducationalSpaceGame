@@ -26,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InterWords.unity
     guid: 9ed8926f1d5f4b246939a09e5b3f7bfd
+  - enabled: 1
+    path: Assets/Scenes/1to2.unity
+    guid: a6cead97167dc324aa1646d10852853e
+  - enabled: 1
+    path: Assets/Scenes/RedoLevel.unity
+    guid: d7145926aa8cf1742ad23a873a1af232
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

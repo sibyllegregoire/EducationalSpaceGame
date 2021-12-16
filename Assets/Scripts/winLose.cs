@@ -16,7 +16,7 @@ public class winLose : MonoBehaviour
     public bool isRacing;
     public float currentTime;
     public float endTime;
-    public float Stars;
+    public static float Stars;
     private Text txt;
     public bool star1ImgOn;
     public Image star1;
@@ -82,31 +82,31 @@ public class winLose : MonoBehaviour
             txt.text = currentTime.ToString("#.00");
             currentTime= currentTime+Time.deltaTime;
         }
-
+        
+        //case in which the child does not answer:
+        
         if(currentTime >= 5f)
         {
             
             isRacing = false;
             Message.text = "You are to slow!";
-            countingwords++;
+            countingwords = countingwords + 1;
             Words.text = countingwords.ToString();
             SceneManager.LoadScene("SampleScene");
             
             
         }
-
-        
         
         if (countingwords == 10)
         {
+            Debug.Log(Stars);
             if(Stars >= 20f)
             {
-                YouWin();
-                SceneManager.LoadScene("level2");
+                SceneManager.LoadScene(7); //load Scene "1to2"
             }
             else
             {
-                SceneManager.LoadScene("SampleScene");
+                SceneManager.LoadScene(8); //load Scene "RedoLevel
             }
         }  
              
@@ -115,52 +115,27 @@ public class winLose : MonoBehaviour
     
         //isRacing = true;
     
+//when the level is finished, so the 10 words are done:
+        
+    
 
-
-    public void YouWin()
-	{
-        Message.text = "You Win!";
+    //public void YouWin()
+	//{
+      //  Message.text = "You Win!";
         //Time.timeScale = 0f;
         //txt = number.GetComponent<Text>();
-        isRacing = false;
-        MeanStars = Stars / Score;
-        if (MeanStars>0f  &&  MeanStars<1f)
-        {
-            Message.text = "Final Score";
-            star1.enabled = true;
-            star1ImgOn = true;
-            star2.enabled = false;
-            star2ImgOn = false;
-            star3.enabled = false;
-            star3ImgOn = false;
-        }
-        if (MeanStars>1f  &&  MeanStars<2f)
-        {
-            Message.text = "Final Score";
-            star1.enabled = true;
-            star1ImgOn = true;
-            star2.enabled = true;
-            star2ImgOn = true;
-            star3.enabled = false;
-            star3ImgOn = false;
-        }
-        if (MeanStars>2f  &&  MeanStars<3f)
-        {
-            Message.text = "Final Score";
-            star1.enabled = true;
-            star1ImgOn = true;
-            star2.enabled = true;
-            star2ImgOn = true;
-            star3.enabled = true;
-            star3ImgOn = true;
-        }
-            
-    }
+        //isRacing = false;
+        
+        //Message.text = "Final Score";
+        //Words.text = Score.ToString();
+        //Stars.text = Stars.ToString();
+    //}
+    
  
     public void SoftAddScore()
     {
         //currentTime = 0f;
-        countingwords++;
+        countingwords = countingwords+1;
         Words.text = countingwords.ToString();
         if (Soft == 1)
         {
@@ -174,10 +149,8 @@ public class winLose : MonoBehaviour
                 star2ImgOn = true;
                 star3.enabled = true;
                 star3ImgOn = true;
-                
- 
-               
             }
+            
             if (currentTime>2f  &&  currentTime<4f)
             {
                 Stars = Stars+2;
@@ -189,6 +162,7 @@ public class winLose : MonoBehaviour
                 star3.enabled = false;
                 star3ImgOn = false;
             }
+            
             if (currentTime>4f  &&  currentTime<5f)
             {
                 Stars = Stars+ 1;
@@ -200,7 +174,7 @@ public class winLose : MonoBehaviour
                 star3.enabled = false;
                 star3ImgOn = false;
             }
-            Score++;
+            Score = Score + 1; //Score = number of right words
             
             //ScoreText.text = Score.ToString();
             //Message.text = "You are right!";
@@ -230,7 +204,7 @@ public class winLose : MonoBehaviour
     public void HardAddScore()
     {
         //currentTime = 0f;
-        countingwords++;
+        countingwords = countingwords+1;
         Words.text = countingwords.ToString();
         if (Hard == 1)
             
@@ -272,7 +246,7 @@ public class winLose : MonoBehaviour
                 star3ImgOn = false;
             }
             
-            Score++;
+            Score = Score + 1;
             
             //ScoreText.text = Score.ToString();
             
@@ -299,6 +273,9 @@ public class winLose : MonoBehaviour
             //Time.timeScale = 0f;
         }
     }
+    
+    
+    
 
     public void changescene()
     {
