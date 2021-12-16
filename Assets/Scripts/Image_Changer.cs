@@ -8,14 +8,22 @@ public class Image_Changer : MonoBehaviour
 
     public Sprite gambe;
     public Sprite gambero;
-    public Sprite gambo;
     public Sprite ganci;
     public Sprite gatto;
     public Sprite gelato;
-    public Sprite gemelli;
-    public Sprite gengiva;
+    public Sprite gallina;
+    public Sprite ghiacchiolo;
+    public Sprite ghiande;
+    public Sprite ghiro;
+    public Sprite gigante;
+    public Sprite ginocchio;
+    public Sprite gomitollo;
+    public Sprite gomme;
+    public Sprite gorilla;
+    public Sprite guanto;
+    public Sprite gufo;
+    public Sprite guinzaglio;
     public Sprite genio;
-    public Sprite ghepardo;
     public List<string> list_of_string_already_used;
     public static List<string> list_of_Keys2=new List<string>{"gambe","gambero","gambo","ganci","gatto","gelato","gemelli","gengiva","genio","ghepardo"};
     

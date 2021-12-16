@@ -52,14 +52,22 @@ using System.Linq;
     
         Palabras.Add("gambe",true); //adding a key/value using the Add() method
         Palabras.Add("gambero",true); // true = hard
-        Palabras.Add("gambo",true);
         Palabras.Add("ganci", true);
         Palabras.Add("gatto", true);
         Palabras.Add("gelato", false);
-        Palabras.Add("gemelli", false);
-        Palabras.Add("gengiva", false);
+        Palabras.Add("gallina", true);
+        Palabras.Add("ghiacciolo", true);
+        Palabras.Add("ghiande", true);
+        Palabras.Add("ghiro", true);
+        Palabras.Add("gigante", false);
+        Palabras.Add("ginocchio",false);
+        Palabras.Add("gomitolo", true);
+        Palabras.Add("gomme", true);
+        Palabras.Add("gorilla", true);
+        Palabras.Add("guanto", true);
+        Palabras.Add("gufo", true);
+        Palabras.Add("guinzaglio", true);
         Palabras.Add("genio", false);
-        Palabras.Add("ghepardo", true);
 
     }
     

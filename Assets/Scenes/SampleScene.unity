@@ -2870,14 +2870,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gambe: {fileID: 21300000, guid: fd92dc47eeb0e4492b0797adf1b70fb3, type: 3}
   gambero: {fileID: 21300000, guid: d5eaee3f408ff4c51964c7805a10bf69, type: 3}
-  gambo: {fileID: 21300000, guid: b2b863dc2d2e24d30861c55efced3438, type: 3}
   ganci: {fileID: 21300000, guid: d782acf144310432281a0253b4ca649b, type: 3}
   gatto: {fileID: 21300000, guid: fe85d679ca9e04ba3acd667826d12269, type: 3}
   gelato: {fileID: 21300000, guid: 3d1942df7ae2d4255bb4e71cce44338a, type: 3}
-  gemelli: {fileID: 21300000, guid: 109fb44f41e43425684db852ff6f2ea0, type: 3}
-  gengiva: {fileID: 21300000, guid: a7cb4ef79f23245a2a482e57560c1479, type: 3}
+  gallina: {fileID: 21300000, guid: ab242f703f248486e965665fe54ba9ea, type: 3}
+  ghiacchiolo: {fileID: 21300000, guid: 7648fda9a88424e2fac190ac287d9c42, type: 3}
+  ghiande: {fileID: 21300000, guid: 2a3d5c0d82e774559ae5beac7de9628f, type: 3}
+  ghiro: {fileID: 21300000, guid: a3e8d874fbc51445482ff178898c67c1, type: 3}
+  gigante: {fileID: 21300000, guid: 4446effff361145d5a7e2c8098a7bc75, type: 3}
+  ginocchio: {fileID: 21300000, guid: a0eee92311e784985874c765d223e5b9, type: 3}
+  gomitollo: {fileID: 21300000, guid: 1217fc688f1364db9b9e4509f20ac6cc, type: 3}
+  gomme: {fileID: 21300000, guid: d19e4657609d64dba91dbc60bb185317, type: 3}
+  gorilla: {fileID: 21300000, guid: 89de978b0b28e44b3817257f7fba4bd7, type: 3}
+  guanto: {fileID: 21300000, guid: 62856001069da4f47ac84c09bfcf5bed, type: 3}
+  gufo: {fileID: 21300000, guid: b32d014db48ec48e8865d4a3e82b5a8f, type: 3}
+  guinzaglio: {fileID: 21300000, guid: 6969437fdfd0c4679a88a93b9ceab1a8, type: 3}
   genio: {fileID: 21300000, guid: 492c8d59ba4804e9eaab14805a0589ee, type: 3}
-  ghepardo: {fileID: 21300000, guid: 279c083ce8ddf46f6a91583be7510b57, type: 3}
   list_of_string_already_used: []
 --- !u!212 &2099881180
 SpriteRenderer:

@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{9CBE0CDA-13E0-D8A7-77F6-B15206AE91E7}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game_Flow.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Game_Flow.cs" Line="70" Column="38" />
+      <File FileName="Assets/Scripts/Image_Changer.cs" Line="18" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ce43b37c-6f87-4117-8cdd-66894a74fa64" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
