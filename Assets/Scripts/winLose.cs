@@ -32,6 +32,7 @@ public class winLose : MonoBehaviour
     public Text annoucement;
     
     
+    
 
 
     public void Awake()
@@ -40,7 +41,7 @@ public class winLose : MonoBehaviour
 		Score = winLose.Score;
 		//ScoreText.text = Score.ToString();
         countingwords = winLose.countingwords;
-        MeanStars = 0f;
+        //MeanStars = 0f;
         
        
         
@@ -101,11 +102,11 @@ public class winLose : MonoBehaviour
             if(Stars >= 20f)
             {
                 YouWin();
-                SceneManager.LoadScene("1to2");
+                SceneManager.LoadScene("level2");
             }
             else
             {
-                SceneManager.LoadScene("Menu");
+                SceneManager.LoadScene("SampleScene");
             }
         }  
              
@@ -119,8 +120,8 @@ public class winLose : MonoBehaviour
     public void YouWin()
 	{
         Message.text = "You Win!";
-        Time.timeScale = 0f;
-        txt = number.GetComponent<Text>();
+        //Time.timeScale = 0f;
+        //txt = number.GetComponent<Text>();
         isRacing = false;
         MeanStars = Stars / Score;
         if (MeanStars>0f  &&  MeanStars<1f)
@@ -311,5 +312,10 @@ public class winLose : MonoBehaviour
         
     }
 
+    public void changescene3()
+    {
+        SceneManager.LoadScene("Menu");
+        
+    }
 
 }

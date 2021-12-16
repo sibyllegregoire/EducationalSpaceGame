@@ -47,6 +47,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\PauseButton.cs" />
      <Compile Include="Assets\Scripts\showhide3.cs" />
      <Compile Include="Assets\landinglvl2.cs" />
      <Compile Include="Assets\Scripts\showhide.cs" />
