@@ -25,7 +25,8 @@ public class Image_Changer : MonoBehaviour
     public Sprite guinzaglio;
     public Sprite genio;
     public List<string> list_of_string_already_used;
-    public static List<string> list_of_Keys2=new List<string>{"gambe","gambero","gambo","ganci","gatto","gelato","gemelli","gengiva","genio","ghepardo"};
+    public static List<string> list_of_Keys2=new List<string>{"gambe","gambero","ganci","gatto","gelato","gallina", "ghiacciolo","ghiande","ghiro","ginocchio","gomitolo","gomme","gorilla","guanto","gufo",
+    "guinzaglio","genio"};
     
     
     public static System.Random rng = new System.Random();
