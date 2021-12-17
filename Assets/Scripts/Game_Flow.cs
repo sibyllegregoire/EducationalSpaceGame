@@ -3,11 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 
 
-
-    public class Game_Flow : MonoBehaviour
+public class Game_Flow : MonoBehaviour
 {
 
 
@@ -17,6 +18,9 @@ using System.Linq;
     public int imagePointer;
     public Transform Image_Changer;
     public Transform Word_Controller;
+    public GameObject PlaySoundButton;
+    public Text SoundInstruction;
+    
     //public string[] liststring;
 
     public static string currentSelection;
@@ -26,10 +30,11 @@ using System.Linq;
     public static System.Random rng = new System.Random();
 
     public static List<int> list1 = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12,13,14,15,16,17,18 };
-    public static List<string> list_of_Keys=new List<string>{"gambe","gambero","ganci","gatto","gelato","gallina", "ghiacciolo","ghiande","ghiro","ginocchio","gomitolo","gomme","gorilla","guanto","gufo",
-    "guinzaglio","genio"};
-    Boolean[] list_of_value = new Boolean[] {true, true, true, true, true, false, false, false, false, true};
-    private int p;
+    //public static List<string> list_of_Keys=new List<string>{"gambe","gambero","ganci","gatto","gelato","gallina", "ghiacciolo","ghiande","ghiro","ginocchio","gomitolo","gomme","gorilla","guanto","gufo",
+    //"guinzaglio","genio"};
+    //Boolean[] list_of_value = new Boolean[] {true, true, true, true, false, true, true, true, true, true, false,
+        //false, true, true, true, true, true, true, false};
+    //private int p;
     
   
 
@@ -39,18 +44,17 @@ using System.Linq;
      public void Start()
     {
 
-        //int n = winLose.countingwords;;
-        //while (n > 1)
-        //{
-           // n--;
-            //int k = rng.Next(n + 1);
-            //int T = list1[k];
-            //list1[k] = list1[n];
-            //list1[n] = T; 
-        //}
+        int n = list1.Count;
+        while (n > 1)
+        {
+        n--;
+        int k = rng.Next(n + 1);
+        int T = list1[k];
+        list1[k] = list1[n];
+        list1[n] = T; 
+        }
 
-    
-    
+        PlaySoundButton.SetActive(false);
         Palabras.Add("gambe",true); //adding a key/value using the Add() method
         Palabras.Add("gambero",true); // true = hard
         Palabras.Add("ganci", true);
@@ -97,11 +101,19 @@ using System.Linq;
             //}
             
         //}
-        Word_Controller.GetComponent<TextMesh>().text = Image_Changer.GetComponent<SpriteRenderer>().sprite.name;
-        
-    }
 
-   
+        if (winLose.countingwords < 9)
+        {
+            
+            Word_Controller.GetComponent<TextMesh>().text = Image_Changer.GetComponent<SpriteRenderer>().sprite.name;
+        }
+        else
+        {
+            PlaySoundButton.SetActive(true);
+            SoundInstruction.text = "Clicca qui per ascoltare la parola";
+        }
+
+    }
 
 }
 
