@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -43,6 +44,11 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
+        if (sentences.Count == 1)
+        {
+            GameObject.Find("ContinueButton").GetComponentInChildren<Text>().text = "Iniziamo!!!";
+        }
+        
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
@@ -60,7 +66,9 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        animator.SetBool("isOpen", false);
+        //animator.SetBool("isOpen", false);
+        
+        SceneManager.LoadScene("SampleScene");
         
     }
 }
