@@ -7,7 +7,7 @@ public class Select_FoS : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("hi Majo");
+        //Debug.Log("hi Majo");
     }
 
     // Update is called once per frame
@@ -19,8 +19,8 @@ public class Select_FoS : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("hi");
-        Debug.Log(gameObject.name);
+        //Debug.Log("hi");
+        //Debug.Log(gameObject.name);
         Game_Flow.currentSelection=gameObject.name;
     }
 

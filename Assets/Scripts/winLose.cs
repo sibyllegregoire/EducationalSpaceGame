@@ -99,7 +99,7 @@ public class winLose : MonoBehaviour
         
         if (countingwords == 10)
         {
-            Debug.Log(Stars);
+            //Debug.Log(Stars);
             if(Stars >= 20f)
             {
                 SceneManager.LoadScene(7); //load Scene "1to2"

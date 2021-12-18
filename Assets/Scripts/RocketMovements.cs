@@ -23,7 +23,7 @@ public class RocketMovements : MonoBehaviour
     IEnumerator Wait()
     {
         //rot = 0;
-        Debug.Log("Delay");
+        //Debug.Log("Delay");
         landing();
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("SampleScene");
@@ -32,7 +32,7 @@ public class RocketMovements : MonoBehaviour
 
     public  void landing()
     {
-        Debug.Log("landing");
+        //Debug.Log("landing");
         transform.localEulerAngles = new Vector3(x: 0, y: 0, z: 0);
 
         if ((rot == 1) && (Hard == 0))
@@ -45,7 +45,7 @@ public class RocketMovements : MonoBehaviour
 
         if (rot == 1 && Hard == 1)
         {
-            Debug.Log("Correct");
+            //Debug.Log("Correct");
             rot = 0;
         }
         if ((rot == 2) && (Hard == 1))
@@ -58,7 +58,7 @@ public class RocketMovements : MonoBehaviour
 
         if (rot == 2 && Hard == 0)
         {
-            Debug.Log("Correct");
+            //Debug.Log("Correct");
             rot = 0;
         }        
         
@@ -94,7 +94,7 @@ public class RocketMovements : MonoBehaviour
     {
         //transform.position = new Vector3(x: transform.position.x, y: transform.position.y + increment, z: 0);
         targetPos = position1;
-        Debug.Log("active1");
+        //Debug.Log("active1");
         rot = 1;
     }
 
@@ -102,7 +102,7 @@ public class RocketMovements : MonoBehaviour
     {
         //transform.position = new Vector3(x: transform.position.x, y: transform.position.y - decrement, z: 0);
         targetPos = position2;
-        Debug.Log("active2");
+        //Debug.Log("active2");
         rot = 2;
     }
 }
