@@ -43,7 +43,7 @@ public class RocketMovelvl3 : MonoBehaviour
                 a = 0;
             }
         }
-        scoreText3.text = showhide3.Score3.ToString();
+        //scoreText3.text = showhide3.Score3.ToString();
         c = showhide3.b;
         Debug.Log("RocketMov3");
         Debug.Log(i);

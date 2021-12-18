@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7902749632302881879}
   - component: {fileID: 6467812543686304673}
-  - component: {fileID: 836119557691653228}
   - component: {fileID: 7328050491800921119}
   - component: {fileID: 9192941446133428663}
+  - component: {fileID: 1147454792163916029}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Laser
@@ -85,22 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &836119557691653228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4738864028139528758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ed6f3062315a6c46bd4b9dc734b788b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laser: {fileID: 4738864028139528758}
-  explosion: {fileID: 174230135774776985, guid: 002504ffd88af4b4cb2db50f6a3b25d3, type: 3}
-  explosionprefab: {fileID: 174230135774776985, guid: 002504ffd88af4b4cb2db50f6a3b25d3, type: 3}
-  speed: 80
 --- !u!50 &7328050491800921119
 Rigidbody2D:
   serializedVersion: 4
@@ -148,3 +132,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.33262363, y: 0.19143522}
   m_EdgeRadius: 0
+--- !u!114 &1147454792163916029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4738864028139528758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed6f3062315a6c46bd4b9dc734b788b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Soft3: 0
+  Hard3: 1
+  laser: {fileID: 4738864028139528758}
+  explosion: {fileID: 4738864028139528758}
+  explosionprefab: {fileID: 174230135774776985, guid: 002504ffd88af4b4cb2db50f6a3b25d3, type: 3}
+  speed: 80
+  x: 0
+  y: 0
+  wl3: {fileID: 0}
