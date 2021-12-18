@@ -11,6 +11,10 @@ public class RocketMovLvl2 : MonoBehaviour
     public Text scoreText2;
     public int Soft2 = 0;
     public int Hard2 = 1;
+
+    public int a;
+
+    public int b;
     //public GameObject rocket;
     
     float increment = 30;
@@ -25,8 +29,11 @@ public class RocketMovLvl2 : MonoBehaviour
 
     public GameObject explosion;
     public GameObject explosionprefab;
+    public winlose2 wl2;
     public void Awake()
     {
+        a = 0;
+        b = 0;
         //targetPos = new Vector2(x: -11, y: 0);
         targetPos = transform.position;
         Score2 = RocketMovLvl2.Score2;
@@ -47,12 +54,14 @@ public class RocketMovLvl2 : MonoBehaviour
         if (other.CompareTag("Hardplanet"))
         {
             Debug.Log("Landing to Hard planet");
+            a = 1;
             HardAddScore();
         }
 
         if (other.CompareTag("Softplanet"))
         {
             Debug.Log("Landing to Soft planet");
+            b = 1;
             SoftAddScore();
         }
 
@@ -61,6 +70,7 @@ public class RocketMovLvl2 : MonoBehaviour
             Debug.Log("Rock contact");
             Rockcontact();
         }
+        wl2.Tricky();
     }
 
     public void moveUp()
@@ -121,44 +131,46 @@ public class RocketMovLvl2 : MonoBehaviour
     
     public void HardAddScore()
     {
+        //a = 1;
         if (Hard2 == 1)
         {
-            Score2++;
-            scoreText2.text = Score2.ToString();
-            Debug.Log(Score2);
+            //Score2++;
+            //scoreText2.text = Score2.ToString();
+            //Debug.Log(Score2);
             StartCoroutine(Wait());
         }
         else
         {
-            Score2 = Score2;
+            //Score2 = Score2;
             //scoreText2.text = "You are Wrong!";
             //Time.timeScale = 0f;
             explosion = Instantiate(explosionprefab, new Vector2(transform.position.x, transform.position.y + 10),
                 Quaternion.identity);
             explosion.GetComponent<showhide>().show();
-            scoreText2.text = "You are Wrong!";
+            //scoreText2.text = "You are Wrong!";
             StartCoroutine(Wait());
         }
     }
     
     public void SoftAddScore()
     {
+        //b = 1;
         if (Soft2 == 1)
         {
-            Score2++;
-            scoreText2.text = Score2.ToString();
+            //Score2++;
+            //scoreText2.text = Score2.ToString();
             //Debug.Log(ScoreText.text);
-            Debug.Log(Score2);
+            //Debug.Log(Score2);
             StartCoroutine(Wait());
         }
         else
         {
-            Score2 = Score2;
+            //Score2 = Score2;
             //Time.timeScale = 0f;
             explosion = Instantiate(explosionprefab, new Vector2(transform.position.x, transform.position.y + 10),
                 Quaternion.identity);
             explosion.GetComponent<showhide>().show();
-            scoreText2.text = "You are Wrong!";
+           // scoreText2.text = "You are Wrong!";
             StartCoroutine(Wait());
         }
     }
@@ -178,11 +190,13 @@ public class RocketMovLvl2 : MonoBehaviour
         SceneManager.LoadScene("level2");
     }
 
+    public void Waitother()
+    {
+        StartCoroutine(Wait());
+    }
     public void YouWin()
     {
-        Debug.Log("You Win!");
-        scoreText2.text = "You Win!";
-        Time.timeScale = 0f;
+        //StartCoroutine(Wait());
     }
     
 }

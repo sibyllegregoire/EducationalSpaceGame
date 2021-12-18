@@ -6,15 +6,21 @@ using UnityEngine.UI;
 
 public class showhide3 : MonoBehaviour
 {
+    public static int Score3;
+    public Text scoreText3;
+    public int Soft3 = 0;
+    public int Hard3 = 1;
     public GameObject laser;
     public GameObject explosion;
     public GameObject explosionprefab;
     public float speed = 80f;
+    public static int b;
 
     public void Awake()
     {
         laser.SetActive(false);
         explosion.SetActive(false);
+        b = 0;
     }
     
 
@@ -27,14 +33,16 @@ public class showhide3 : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
+        b = 1;
+        Debug.Log(b);
         if (other.CompareTag("Hardplanet"))
         {
             Debug.Log("Landing to Hard planet");
             explosion = Instantiate(explosionprefab, new Vector2(laser.transform.position.x, laser.transform.position.y + 10),
                 Quaternion.identity);
             explosion.GetComponent<showhide>().show();
+            HardAddScore();
             //laser.SetActive(false);
-            StartCoroutine(Wait());
         }
 
         if (other.CompareTag("Softplanet"))
@@ -43,18 +51,57 @@ public class showhide3 : MonoBehaviour
             explosion = Instantiate(explosionprefab, new Vector2(laser.transform.position.x, laser.transform.position.y + 10),
                 Quaternion.identity);
             explosion.GetComponent<showhide>().show();
+            SoftAddScore();
             //laser.SetActive(false);
-            StartCoroutine(Wait());
-        }
-        
-        IEnumerator Wait()
-        {
-            laser.SetActive(false);
-            Debug.Log("Delay");
-            yield return new WaitForSeconds(2);
-            SceneManager.LoadScene("level3");
         }
 
+    }
+    
+    IEnumerator Wait()
+    {
+        laser.SetActive(false);
+        Debug.Log("Delay here");
+        //b = 0;
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("level3");
+    }
+
+    public void HardAddScore()
+    {
+        if (Hard3 == 1)
+        {
+            Score3++;
+            scoreText3.text = Score3.ToString();
+            Debug.Log(Score3);
+            StartCoroutine(Wait());
+        }
+        else
+        {
+            Score3 = Score3;
+            //scoreText2.text = "You are Wrong!";
+            //Time.timeScale = 0f;
+            scoreText3.text = "You are Wrong!";
+            StartCoroutine(Wait());
+        }
+    }
+    
+    public void SoftAddScore()
+    {
+        if (Soft3 == 1)
+        {
+            Score3++;
+            scoreText3.text = Score3.ToString();
+            //Debug.Log(ScoreText.text);
+            Debug.Log(Score3);
+            StartCoroutine(Wait());
+        }
+        else
+        {
+            Score3 = Score3;
+            //Time.timeScale = 0f;
+            scoreText3.text = "You are Wrong!";
+            StartCoroutine(Wait());
+        }
     }
     
 }

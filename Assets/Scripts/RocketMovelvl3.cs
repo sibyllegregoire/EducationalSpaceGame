@@ -14,9 +14,13 @@ public class RocketMovelvl3 : MonoBehaviour
     public GameObject Laser;
     public GameObject Laserprefab;
     public int a;
-    
+    public Text scoreText3;
     public float limitright = 370f;
     public float limitleft = 25f;
+    public showhide3 Showhide3;
+    public comettrig Comettrig;
+    public int c;
+    public int i = 0;
     
     public void Awake()
     {
@@ -38,6 +42,15 @@ public class RocketMovelvl3 : MonoBehaviour
                 Destroy(Laser);
                 a = 0;
             }
+        }
+        scoreText3.text = showhide3.Score3.ToString();
+        c = showhide3.b;
+        Debug.Log("RocketMov3");
+        Debug.Log(i);
+        i = comettrig.j;
+        if (c == 1 || i == 1)
+        {
+            StartCoroutine(Wait());
         }
     }
     
@@ -84,4 +97,11 @@ public class RocketMovelvl3 : MonoBehaviour
         }
     }
 
+    IEnumerator Wait()
+    {
+        Debug.Log("Delay here");
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("level3");
+    }
+    
 }

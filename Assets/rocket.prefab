@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 2ad85766d18313448a419c065df5a79f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c37d2eb202adea140aa865a19a97a49b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,12 +97,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2c610c281bd664ca5cdf1c1a2bf42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText2: {fileID: 0}
+  Soft2: 0
+  Hard2: 1
+  a: 0
+  b: 0
   targetPos: {x: 0, y: 0}
   speed: 100
   limitup: 290
   limitdown: 25
   limitright: 370
   limitleft: 25
+  explosion: {fileID: 0}
+  explosionprefab: {fileID: 0}
+  wl2: {fileID: 0}
 --- !u!50 &7543745121994207083
 Rigidbody2D:
   serializedVersion: 4
