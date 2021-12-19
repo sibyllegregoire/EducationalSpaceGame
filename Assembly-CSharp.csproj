@@ -63,6 +63,7 @@
      <Compile Include="Assets\MainMenu.cs" />
      <Compile Include="Assets\cometmov2.cs" />
      <Compile Include="Assets\Scripts\scrolling.cs" />
+     <Compile Include="Assets\Scripts\WinLevel2.cs" />
      <Compile Include="Assets\Scripts\RocketMovelvl3.cs" />
      <Compile Include="Assets\AudioPlayerManager.cs" />
      <Compile Include="Assets\comettrig.cs" />

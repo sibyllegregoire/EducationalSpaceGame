@@ -19,6 +19,7 @@ public class RocketMovements : MonoBehaviour
     private Vector3 rotationhard = new Vector3(x: 0, y: 0, z: 45);
     private Vector3 rotationsoft = new Vector3(x: 0, y: 0, z: 315);
     private int rot;
+    public static int numberofreload;
 
     IEnumerator Wait()
     {
@@ -27,6 +28,9 @@ public class RocketMovements : MonoBehaviour
         landing();
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("SampleScene");
+        numberofreload = numberofreload + 1;
+        
+        
         //transform.position = position0;
     }
 
@@ -105,4 +109,6 @@ public class RocketMovements : MonoBehaviour
         //Debug.Log("active2");
         rot = 2;
     }
+    
+    
 }

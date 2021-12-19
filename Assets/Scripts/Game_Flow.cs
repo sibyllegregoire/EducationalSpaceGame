@@ -33,7 +33,8 @@ public class Game_Flow : MonoBehaviour
 
     
     public static List<int> list1 = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12,13,14,15,16,17,18 };
-    //public static List<string> list_of_Keys=new List<string>{"gambe","gambero","ganci","gatto","gelato","gallina", "ghiacciolo","ghiande","ghiro","ginocchio","gomitolo","gomme","gorilla","guanto","gufo",
+    //public static List<string> list_of_Keys=new List<string>{"gambe","gambero","ganci","gatto","gelato","gallina",
+    //"ghiacciolo","ghiande","ghiro","ginocchio","gomitolo","gomme","gorilla","guanto","gufo",
     //"guinzaglio","genio"};
     //Boolean[] list_of_value = new Boolean[] {true, true, true, true, false, true, true, true, true, true, false,
         //false, true, true, true, true, true, true, false};
@@ -122,7 +123,7 @@ public class Game_Flow : MonoBehaviour
 
         //Debug.Log(rndsound);
         //if (winLose.countingwords != rndsound) TODO for selecting randon numb for reproducing sound
-        if (winLose.countingwords != 9)
+        if (RocketMovements.numberofreload != 9)
         {
 
         Word_Controller.GetComponent<TextMesh>().text = Image_Changer.GetComponent<SpriteRenderer>().sprite.name;

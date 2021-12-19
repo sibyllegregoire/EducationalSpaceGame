@@ -30,6 +30,7 @@ public class winLose : MonoBehaviour
     private Text Words;
     public Text number;
     public Text annoucement;
+    public static int numberofreload;
     
     
     
@@ -93,8 +94,10 @@ public class winLose : MonoBehaviour
             countingwords = countingwords + 1;
             Words.text = countingwords.ToString();
             SceneManager.LoadScene("SampleScene");
-            
-            
+            numberofreload = RocketMovements.numberofreload;
+            numberofreload = numberofreload + 1;
+            Debug.Log(numberofreload);
+
         }
         
         if (countingwords == 10)
@@ -102,11 +105,11 @@ public class winLose : MonoBehaviour
             //Debug.Log(Stars);
             if(Stars >= 20f)
             {
-                SceneManager.LoadScene(7); //load Scene "1to2"
+                SceneManager.LoadScene("1to2"); //load Scene "1to2"
             }
             else
             {
-                SceneManager.LoadScene(8); //load Scene "RedoLevel
+                SceneManager.LoadScene("RedoLevel"); //load Scene "RedoLevel
             }
         }  
              
