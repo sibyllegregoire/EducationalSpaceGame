@@ -12,10 +12,10 @@ public class RocketMovements : MonoBehaviour
     public int Hard = 1;
     public int Soft = 0;
     
-    public float limit = 228;
-    private Vector3 position1 = new Vector3(x: 82, y: 214, z: 0);
+    public float limit = 216;
+    private Vector3 position1 = new Vector3(x: 40, y: 216, z: 0);
     private Vector3 position0 = new Vector3(x: 231, y: 25, z: 0);
-    private Vector3 position2 = new Vector3(x: 364, y: 214, z: 0);
+    private Vector3 position2 = new Vector3(x: 401, y: 216, z: 0);
     private Vector3 rotationhard = new Vector3(x: 0, y: 0, z: 45);
     private Vector3 rotationsoft = new Vector3(x: 0, y: 0, z: 315);
     private int rot;
@@ -78,7 +78,7 @@ public class RocketMovements : MonoBehaviour
     public void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
-        if (transform.position.y == 214)
+        if (transform.position.y == 216)
         {
             StartCoroutine(Wait());
             //transform.position = position0;
