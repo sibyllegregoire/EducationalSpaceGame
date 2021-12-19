@@ -102,7 +102,7 @@ public class winlose2 : MonoBehaviour
             //Debug.Log(Stars);
             if(Stars >= 20f)
             {
-                SceneManager.LoadScene(7); //load Scene "1to2"
+                SceneManager.LoadScene(9); //load Scene "2to3"
             }
             else
             {
