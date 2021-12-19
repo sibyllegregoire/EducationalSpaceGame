@@ -98,11 +98,11 @@ public class collitionhard : MonoBehaviour
             //Debug.Log(Stars);
             if(Stars >= 20f)
             {
-                SceneManager.LoadScene(7); //load Scene "1to2"
+                SceneManager.LoadScene("win"); //load Scene "1to2"
             }
             else
             {
-                SceneManager.LoadScene(8); //load Scene "RedoLevel
+                SceneManager.LoadScene("RedoLevel3"); //load Scene "RedoLevel
             }
         }  
              

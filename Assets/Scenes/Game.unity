@@ -422,7 +422,15 @@ MonoBehaviour:
     - Sto viaggiando tra le galassie per imparare una nuova lingua, ma ho bisogno
       di un amico che viaggi con me sul mio razzo!!!
     - Ti piacerebbe venire con me in questo viaggio spaziale e aiutarmi a scoprire
-      i segreti dei suoni soft e hard?
+      i segreti dei suoni forti e tenui?
+    - 'Iniziamo dal primo livello. Come sai con la lettera G si possono ottenere
+      suoni forti e tenui. '
+    - 'Leggi o ascolta la parola sullo schemo e seleziona il pianeta corrispondente
+      alla risposta corretta. '
+    - 'Rispondi velocemente per collezionare il maggior numero di stelle possibile.
+
+'
+    - 'Ricorda: abbiamo bisogno di almeno 20 stelle per passare al livello successivo. '
     - Pronti? Partenza... VIAAAAAA
 --- !u!114 &409991827
 MonoBehaviour:

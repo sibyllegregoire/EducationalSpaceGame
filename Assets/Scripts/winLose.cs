@@ -96,7 +96,7 @@ public class winLose : MonoBehaviour
             SceneManager.LoadScene("SampleScene");
             numberofreload = RocketMovements.numberofreload;
             numberofreload = numberofreload + 1;
-            Debug.Log(numberofreload);
+            
 
         }
         
@@ -109,7 +109,10 @@ public class winLose : MonoBehaviour
             }
             else
             {
-                SceneManager.LoadScene("RedoLevel"); //load Scene "RedoLevel
+                SceneManager.LoadScene("RedoLevel"); //load Scene "RedoLevel"
+                countingwords = 0;
+                Stars = 0;
+                numberofreload = 0;
             }
         }  
              

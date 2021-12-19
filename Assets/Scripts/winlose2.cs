@@ -106,7 +106,7 @@ public class winlose2 : MonoBehaviour
             }
             else
             {
-                SceneManager.LoadScene("RedoLevel"); //load Scene 
+                SceneManager.LoadScene("RedoLevel2"); //load Scene 
             }
         }  
              

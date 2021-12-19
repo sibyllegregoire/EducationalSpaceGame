@@ -6,17 +6,31 @@ using UnityEngine.SceneManagement;
 public class NextLevet : MonoBehaviour
 {
     
-    public void changescene()
+    public void repeatlevel()
+    {
+        SceneManager.LoadScene("SampleScene");
+        
+    }
+    
+    public void repeatlevel2()
     {
         SceneManager.LoadScene("level2");
         
     }
     
-    public void repeatlevel()
+    public void repeatlevel3()
     {
-      SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("level3");
+        
+    } 
+    
+    public void changescene()
+    {
+        SceneManager.LoadScene("Instructions2");
         
     }
+    
+    
     public void changescene4()
     {
         SceneManager.LoadScene("PauseLevl3");
@@ -29,6 +43,11 @@ public class NextLevet : MonoBehaviour
         
     }
 
+    public void changescene3()
+    {
+        SceneManager.LoadScene("level2");
+        
+    }
     
     public void changescene2()
     {
@@ -36,7 +55,11 @@ public class NextLevet : MonoBehaviour
         
     }
     
-    
+    public void changescene5()
+    {
+        SceneManager.LoadScene("Instructions3");
+        
+    }
     
     // Start is called before the first frame update
     void Start()

@@ -68,7 +68,7 @@ public class DialogueManager : MonoBehaviour
     {
         //animator.SetBool("isOpen", false);
         
-        SceneManager.LoadScene("Instructions");
+        SceneManager.LoadScene("SampleScene");
         
     }
 }

@@ -879,7 +879,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Livello 2
+  m_Text: Successivo
 --- !u!222 &1665177643
 CanvasRenderer:
   m_ObjectHideFlags: 0
