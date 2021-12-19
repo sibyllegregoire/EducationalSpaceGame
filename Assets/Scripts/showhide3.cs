@@ -112,5 +112,5 @@ public class showhide3 : MonoBehaviour
         }
         //wl3.Tricky();
     }
-    
+   
 }

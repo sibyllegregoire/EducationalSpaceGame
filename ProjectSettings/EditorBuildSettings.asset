@@ -44,4 +44,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Instructions.unity
     guid: ac0b0482586ea4346a943f52fbd068bd
+  - enabled: 1
+    path: Assets/Scenes/PauseLevl2.unity
+    guid: 784c2a668d774a34ca576d51c9dbf536
+  - enabled: 1
+    path: Assets/Scenes/PauseLevl3.unity
+    guid: 7558f4c34c56cc145bbc32fd216315fd
   m_configObjects: {}

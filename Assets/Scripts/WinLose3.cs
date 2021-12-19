@@ -59,4 +59,9 @@ public class WinLose3 : MonoBehaviour
         
 
     }
+    public void changescene()
+    {
+        SceneManager.LoadScene("PauseLevl3");
+        
+    }
 }

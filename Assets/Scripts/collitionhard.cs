@@ -282,4 +282,5 @@ public class collitionhard : MonoBehaviour
             //Time.timeScale = 0f;
         }
     }
+  
 }

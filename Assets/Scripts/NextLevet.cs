@@ -17,6 +17,11 @@ public class NextLevet : MonoBehaviour
       SceneManager.LoadScene("SampleScene");
         
     }
+    public void changescene4()
+    {
+        SceneManager.LoadScene("PauseLevl3");
+        
+    }
     
     public void changescene1()
     {
@@ -30,6 +35,8 @@ public class NextLevet : MonoBehaviour
         SceneManager.LoadScene("level3");
         
     }
+    
+    
     
     // Start is called before the first frame update
     void Start()

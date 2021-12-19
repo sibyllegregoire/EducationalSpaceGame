@@ -106,7 +106,7 @@ public class winlose2 : MonoBehaviour
             }
             else
             {
-                SceneManager.LoadScene("RedoLevel); //load Scene "RedoLevel
+                SceneManager.LoadScene("RedoLevel"); //load Scene 
             }
         }  
              
@@ -258,7 +258,7 @@ public class winlose2 : MonoBehaviour
     
     public void changescene()
     {
-        SceneManager.LoadScene("Test");
+        SceneManager.LoadScene("PauseLevl2");
         
     }
 
