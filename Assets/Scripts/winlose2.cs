@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+using UnityEngine.Assertions.Must;
 using UnityEngine.EventSystems;
 
 public class winlose2 : MonoBehaviour
@@ -24,7 +25,7 @@ public class winlose2 : MonoBehaviour
     public Image star2;
     public bool star3ImgOn;
     public Image star3;
-    public Transform Image_Changer;
+    public Transform Image_Changer2;
     public float MeanStars;
     public static int countingwords;
     private Text Words;
@@ -33,6 +34,7 @@ public class winlose2 : MonoBehaviour
     public RocketMovLvl2 Rmv2;
     public int c;
     public int d;
+    public static int numberofreload2;
 
     public void Awake()
     {
@@ -64,7 +66,7 @@ public class winlose2 : MonoBehaviour
     
     public void Update()
     {
-        /*if (Game_Flow2.Palabras[Image_changer2.GetComponent<SpriteRenderer>().sprite.name]) {
+        if (Game_Flow2.Palabras[Image_Changer2.GetComponent<SpriteRenderer>().sprite.name]) {
             Soft = 0;
             Hard = 1;
         }
@@ -73,7 +75,7 @@ public class winlose2 : MonoBehaviour
             Hard = 0;
             Soft = 1;
 
-        }*/
+        }
         
         if (isRacing)
         {
@@ -92,6 +94,7 @@ public class winlose2 : MonoBehaviour
             Words.text = countingwords.ToString();
             //StartCoroutine(Wait());
             //Rmv2.Waitother();
+            numberofreload2 = numberofreload2 + 1;
             SceneManager.LoadScene("level2");
             
             

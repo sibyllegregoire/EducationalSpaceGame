@@ -30,6 +30,7 @@ public class RocketMovLvl2 : MonoBehaviour
     public GameObject explosion;
     public GameObject explosionprefab;
     public winlose2 wl2;
+    public static int numberofreload;
     public void Awake()
     {
         a = 0;
@@ -187,7 +188,10 @@ public class RocketMovLvl2 : MonoBehaviour
     {
         Debug.Log("Delay");
         yield return new WaitForSeconds(2);
+        numberofreload = numberofreload + 1;
+        //Debug.Log(numberofreload);
         SceneManager.LoadScene("level2");
+        
     }
 
     public void Waitother()
