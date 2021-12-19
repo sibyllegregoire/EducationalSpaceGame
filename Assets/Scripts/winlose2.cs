@@ -94,6 +94,7 @@ public class winlose2 : MonoBehaviour
             Words.text = countingwords.ToString();
             //StartCoroutine(Wait());
             //Rmv2.Waitother();
+            
             numberofreload2 = numberofreload2 + 1;
             SceneManager.LoadScene("level2");
             
@@ -118,6 +119,7 @@ public class winlose2 : MonoBehaviour
         public void SoftAddScore()
         {
             d = 0;
+            
         //currentTime = 0f;
         countingwords = countingwords+1;
         Words.text = countingwords.ToString();

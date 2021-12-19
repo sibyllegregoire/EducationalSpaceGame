@@ -35,7 +35,7 @@ public class Game_Flow2 : MonoBehaviour
     public static IDictionary<string, bool> Palabras = new Dictionary<string, bool>();
 
     
-    public static List<int> list1 = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12,13,14,15,16,17,18 };
+    public static List<int> list1 = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27 };
     //public static List<string> list_of_Keys=new List<string>{"gambe","gambero","ganci","gatto","gelato","gallina",
     //"ghiacciolo","ghiande","ghiro","ginocchio","gomitolo","gomme","gorilla","guanto","gufo",
     //"guinzaglio","genio"};
@@ -64,9 +64,9 @@ public class Game_Flow2 : MonoBehaviour
         }
 
         PlaySoundButton.SetActive(false);
-        if (!Palabras.ContainsKey("gambe"))
-        {
-Palabras.Add("gambe",true); //adding a key/value using the Add() method
+        //if (!Palabras.ContainsKey("gambe"))
+        //{
+//Palabras.Add("gambe",true); //adding a key/value using the Add() method
             /*Palabras.Add("gambero",true); // true = hard
             Palabras.Add("ganci", true);
             Palabras.Add("gatto", true);
@@ -125,7 +125,7 @@ Palabras.Add("gambe",true); //adding a key/value using the Add() method
             Palabras.Add("scudo", true);*/
         }
 
-    }
+    
 
     
     
@@ -165,13 +165,14 @@ Palabras.Add("gambe",true); //adding a key/value using the Add() method
         c = RocketMovLvl2.numberofreload - 1;
         d = winlose2.numberofreload2;
         e = c + d;
-        
-        Debug.Log(e);
+        //Debug.Log(e);
+        Debug.Log(c +1);
+        Debug.Log(winlose2.countingwords);
         
 
         //Debug.Log(rndsound);
         //if (winLose.countingwords != rndsound) TODO for selecting randon numb for reproducing sound
-        if (e <= 7)
+        if (winlose2.countingwords <= 7)
         {
 
         Word_Controller.GetComponent<TextMesh>().text = Image_Changer.GetComponent<SpriteRenderer>().sprite.name;
@@ -181,12 +182,26 @@ Palabras.Add("gambe",true); //adding a key/value using the Add() method
         {
 
          //TODO delay on show of instruction and audio
+         
+         StartCoroutine(Wait());
+
          PlaySoundButton.SetActive(true);
          SoundInstruction.text = "Clicca qui per ascoltare la parola";
+         
          GetComponent<AudioWordsPlayer>().PlayWord();
 
 
         }
+    }
+    
+    IEnumerator Wait()
+    {
+        Debug.Log("Delay");
+        yield return new WaitForSeconds(2);
+        //numberofreload = numberofreload + 1;
+        //Debug.Log(numberofreload);
+        //SceneManager.LoadScene("level2");
+        
     }
 
 

@@ -36,7 +36,7 @@ public class Image_Changer2 : MonoBehaviour
     void Start()
     {
         int rndaudio = Random.Range(1, 10);
-        Debug.Log(rndaudio);
+        //Debug.Log(rndaudio);
 
 
         //int random_number = rng.Next(1,winLose.countingwords+1);

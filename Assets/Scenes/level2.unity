@@ -997,7 +997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8202a509d969d46e0996477631b6fb09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Image_Changer: {fileID: 0}
+  Image_Changer: {fileID: 405725932}
 --- !u!212 &405725930
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1038,7 +1038,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: ab242f703f248486e965665fe54ba9ea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3328924a526ffc941ba011c7392cb5c4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1991,7 +1991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8202a509d969d46e0996477631b6fb09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Image_Changer: {fileID: 0}
+  Image_Changer: {fileID: 405725932}
 --- !u!114 &750971485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2603,6 +2603,9 @@ MonoBehaviour:
   PlaySoundButton: {fileID: 750971481}
   SoundInstruction: {fileID: 1406766846}
   rndsound: 0
+  c: 0
+  d: 0
+  e: 0
 --- !u!1 &1103787076
 GameObject:
   m_ObjectHideFlags: 0
