@@ -286,7 +286,7 @@ public class winlose2 : MonoBehaviour
 
     public void changescene()
     {
-        SceneManager.LoadScene("PauseLevl2");
+        SceneManager.LoadScene("PauseButtonLevel2");
 
     }
 

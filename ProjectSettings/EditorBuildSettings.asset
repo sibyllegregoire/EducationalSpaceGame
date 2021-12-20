@@ -65,4 +65,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/win.unity
     guid: 3f2fc5a2ec14a2c4eabcc36f7cb10e33
+  - enabled: 1
+    path: Assets/Scenes/PauseButtonLevel2.unity
+    guid: 249933bbc40ddb045a4423dff56820cf
+  - enabled: 1
+    path: Assets/Scenes/PauseButtonLevel3.unity
+    guid: c69d7eea59dde65439ffcda4ad038c11
   m_configObjects: {}

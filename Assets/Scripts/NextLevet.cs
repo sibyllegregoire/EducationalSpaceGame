@@ -33,7 +33,7 @@ public class NextLevet : MonoBehaviour
     
     public void changescene4()
     {
-        SceneManager.LoadScene("PauseLevl3");
+        SceneManager.LoadScene("PauseButtonLevel3");
         
     }
     
