@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class collitionhard : MonoBehaviour
 {
     
-    public int Soft3 = 0;
-    public int Hard3 = 1;
+    public int Soft;
+    public int Hard;
     public bool isRacing;
     public float currentTime;
     public float endTime;
@@ -31,6 +31,7 @@ public class collitionhard : MonoBehaviour
     public static int Score;
     //public Text ScoreText;
     public Text Message;
+    public static int count;
     
     public void Awake()
     {
@@ -60,7 +61,7 @@ public class collitionhard : MonoBehaviour
     
     public void Update()
     {
-        /*if (Game_Flow2.Palabras[Image_changer2.GetComponent<SpriteRenderer>().sprite.name]) {
+        if (Game_Flow3.Palabras[Image_Changer.GetComponent<SpriteRenderer>().sprite.name]) {
             Soft = 0;
             Hard = 1;
         }
@@ -69,7 +70,7 @@ public class collitionhard : MonoBehaviour
             Hard = 0;
             Soft = 1;
 
-        }*/
+        }
         
         if (isRacing)
         {
@@ -88,9 +89,8 @@ public class collitionhard : MonoBehaviour
             Words.text = countingwords.ToString();
             //StartCoroutine(Wait());
             //Rmv2.Waitother();
+            count++;
             SceneManager.LoadScene("level3");
-            
-            
         }
         
         if (countingwords == 10)
@@ -112,7 +112,7 @@ public class collitionhard : MonoBehaviour
         if (other.CompareTag("Laser"))
         {
 
-            if (Hard3 == 1)
+            if (Hard == 1)
             {
                 Debug.Log("Landing to Hard planet :)");
                 HardAddScore();
@@ -131,7 +131,7 @@ public class collitionhard : MonoBehaviour
         //currentTime = 0f;
         countingwords = countingwords+1;
         Words.text = countingwords.ToString();
-        if (Hard3 == 1)
+        if (Hard == 1)
             
         {
             if (currentTime>0f  &&  currentTime<3f)
@@ -144,9 +144,7 @@ public class collitionhard : MonoBehaviour
                 star2ImgOn = true;
                 star3.enabled = true;
                 star3ImgOn = true;
-                
- 
-               
+                count++;
             }
             if (currentTime>3f  &&  currentTime<5f)
             {
@@ -158,6 +156,7 @@ public class collitionhard : MonoBehaviour
                 star2ImgOn = true;
                 star3.enabled = false;
                 star3ImgOn = false;
+                count++;
             }
             if (currentTime>5f  &&  currentTime<8f)
             {
@@ -169,6 +168,7 @@ public class collitionhard : MonoBehaviour
                 star2ImgOn = false;
                 star3.enabled = false;
                 star3ImgOn = false;
+                count++;
             }
             
             Score = Score + 1;
@@ -192,6 +192,7 @@ public class collitionhard : MonoBehaviour
             isRacing = false;
             //currentTime = 0f;
             //Time.timeScale = 0f;
+            count++;
         }
     }
     
@@ -219,7 +220,7 @@ public class collitionhard : MonoBehaviour
         //currentTime = 0f;
         countingwords = countingwords+1;
         Words.text = countingwords.ToString();
-        if (Soft3 == 1)
+        if (Soft == 1)
         {
             if (currentTime>0f  &&  currentTime<2f)
             {
@@ -231,6 +232,7 @@ public class collitionhard : MonoBehaviour
                 star2ImgOn = true;
                 star3.enabled = true;
                 star3ImgOn = true;
+                count++;
             }
             
             if (currentTime>2f  &&  currentTime<4f)
@@ -243,6 +245,7 @@ public class collitionhard : MonoBehaviour
                 star2ImgOn = true;
                 star3.enabled = false;
                 star3ImgOn = false;
+                count++;
             }
             
             if (currentTime>4f  &&  currentTime<5f)
@@ -255,6 +258,7 @@ public class collitionhard : MonoBehaviour
                 star2ImgOn = false;
                 star3.enabled = false;
                 star3ImgOn = false;
+                count++;
             }
             Score = Score + 1; //Score = number of right words
             
@@ -278,6 +282,7 @@ public class collitionhard : MonoBehaviour
             Message.text = "You are Wrong!";
             //txt = GetComponent<Text>();
             isRacing = false;
+            count++;
             
             //Time.timeScale = 0f;
         }
