@@ -1,19 +1,22 @@
-﻿<Properties StartupConfiguration="{9CBE0CDA-13E0-D8A7-77F6-B15206AE91E7}|">
+﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game_Flow.cs">
     <Files>
-      <File FileName="Assets/Scripts/Game_Flow.cs" Line="131" Column="13" />
-      <File FileName="Assets/Scripts/winLose.cs" Line="181" Column="15" />
-      <File FileName="Assets/Scripts/AudioWordsPlayer.cs" Line="20" Column="2" />
-      <File FileName="Assets/Scripts/Select_FoS.cs" Line="23" Column="11" />
-      <File FileName="Assets/Scripts/RocketMovements.cs" Line="105" Column="11" />
-      <File FileName="Assets/Scripts/Image_Changer.cs" Line="53" Column="39" />
+      <File FileName="Assets/Scripts/Game_Flow.cs" Line="115" Column="1" />
+      <File FileName="Assets/Scripts/RocketMovements.cs" Line="31" Column="9" />
+      <File FileName="Assets/Scripts/winLose.cs" Line="33" Column="23" />
+      <File FileName="Assets/Scripts/winlose2.cs" Line="268" Column="21" />
+      <File FileName="Assets/Scripts/RocketMovLvl2.cs" Line="210" Column="21" />
+      <File FileName="Assets/Scripts/Game_Flow2.cs" Line="171" Column="33" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ce43b37c-6f87-4117-8cdd-66894a74fa64" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="55af9229-d4d2-45ec-93aa-4c1fa13f8d3c" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/mariajosealmarioescorcia/Documents/Polimi /EducationalSpaceGame/Assets/Scripts/WinLevel2.cs" relfile="Assets/Scripts/WinLevel2.cs" line="38" column="1" />
+      <Breakpoint file="/Users/mariajosealmarioescorcia/Documents/Polimi /EducationalSpaceGame/Assets/Scripts/RocketMovLvl2.cs" relfile="Assets/Scripts/RocketMovLvl2.cs" line="2" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

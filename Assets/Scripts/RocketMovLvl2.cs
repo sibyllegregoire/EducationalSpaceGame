@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class RocketMovLvl2 : MonoBehaviour
 {
-    
+
     public static int Score2;
     public Text scoreText2;
     public int Soft2 = 0;
@@ -16,12 +16,12 @@ public class RocketMovLvl2 : MonoBehaviour
 
     public int b;
     //public GameObject rocket;
-    
+
     float increment = 30;
     float decrement = 30;
     public Vector2 targetPos;
     public float speed = 100f;
-    
+
     public float limitup = 290f;
     public float limitdown = 25f;
     public float limitright = 370f;
@@ -30,7 +30,7 @@ public class RocketMovLvl2 : MonoBehaviour
     public GameObject explosion;
     public GameObject explosionprefab;
     public winlose2 wl2;
-    public static int numberofreload;
+    public static int numberofreload2;
     public void Awake()
     {
         a = 0;
@@ -44,28 +44,28 @@ public class RocketMovLvl2 : MonoBehaviour
     public void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
-        if(Score2 >= 10)
+        if (Score2 >= 10)
         {
             YouWin();
         }
-        if(Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             moveUp();
         }
-        if(Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow))
         {
             moveDown();
         }
-        
-        if(Input.GetKey(KeyCode.LeftArrow))
+
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
-                    moveLeft();
+            moveLeft();
         }
-        if(Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             moveRight();
         }
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -119,7 +119,7 @@ public class RocketMovLvl2 : MonoBehaviour
             transform.localEulerAngles = new Vector3(x: 0, y: 0, z: 180);
         }
     }
-    
+
     public void moveRight()
     {
         //transform.position = new Vector3(x: transform.position.x, y: transform.position.y + increment, z: 0);
@@ -133,7 +133,7 @@ public class RocketMovLvl2 : MonoBehaviour
             transform.localEulerAngles = new Vector3(x: 0, y: 0, z: -90);
         }
     }
-    
+
     public void moveLeft()
     {
         //transform.position = new Vector3(x: transform.position.x, y: transform.position.y + increment, z: 0);
@@ -147,7 +147,7 @@ public class RocketMovLvl2 : MonoBehaviour
             transform.localEulerAngles = new Vector3(x: 0, y: 0, z: 90);
         }
     }
-    
+
     public void HardAddScore()
     {
         //a = 1;
@@ -170,7 +170,7 @@ public class RocketMovLvl2 : MonoBehaviour
             StartCoroutine(Wait());
         }
     }
-    
+
     public void SoftAddScore()
     {
         //b = 1;
@@ -189,7 +189,7 @@ public class RocketMovLvl2 : MonoBehaviour
             explosion = Instantiate(explosionprefab, new Vector2(transform.position.x, transform.position.y + 10),
                 Quaternion.identity);
             explosion.GetComponent<showhide>().show();
-           // scoreText2.text = "You are Wrong!";
+            // scoreText2.text = "You are Wrong!";
             StartCoroutine(Wait());
         }
     }
@@ -206,10 +206,10 @@ public class RocketMovLvl2 : MonoBehaviour
     {
         Debug.Log("Delay");
         yield return new WaitForSeconds(2);
-        numberofreload = numberofreload + 1;
-        //Debug.Log(numberofreload);
+        numberofreload2 = numberofreload2 + 1;
+        //Debug.Log(numberofreload2);
         SceneManager.LoadScene("level2");
-        
+
     }
 
     public void Waitother()
@@ -220,5 +220,5 @@ public class RocketMovLvl2 : MonoBehaviour
     {
         //StartCoroutine(Wait());
     }
-    
+
 }

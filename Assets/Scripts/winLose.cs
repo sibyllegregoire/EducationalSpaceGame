@@ -90,7 +90,7 @@ public class winLose : MonoBehaviour
         {
             
             isRacing = false;
-            Message.text = "You are to slow!";
+            Message.text = "Sei troppo lento!";
             countingwords = countingwords + 1;
             Words.text = countingwords.ToString();
             SceneManager.LoadScene("SampleScene");
@@ -148,7 +148,7 @@ public class winLose : MonoBehaviour
             if (currentTime>0f  &&  currentTime<2f)
             {
                 Stars = Stars+3;
-                Message.text = "You are fast as a rocket!";
+                Message.text = "Sei veloce come un razzo!";
                 star1.enabled = true;
                 star1ImgOn = true;
                 star2.enabled = true;
@@ -160,7 +160,7 @@ public class winLose : MonoBehaviour
             if (currentTime>2f  &&  currentTime<4f)
             {
                 Stars = Stars+2;
-                Message.text = "You are right";
+                Message.text = "Corretto!";
                 star1.enabled = true;
                 star1ImgOn = true;
                 star2.enabled = true;
@@ -172,7 +172,7 @@ public class winLose : MonoBehaviour
             if (currentTime>4f  &&  currentTime<5f)
             {
                 Stars = Stars+ 1;
-                Message.text = "You are right";
+                Message.text = "Corretto!";
                 star1.enabled = true;
                 star1ImgOn = true;
                 star2.enabled = false;
@@ -199,7 +199,7 @@ public class winLose : MonoBehaviour
         else
         {
 			Score = Score;
-            Message.text = "You are Wrong!";
+            Message.text = "Hai sbagliato!";
             //txt = GetComponent<Text>();
             isRacing = false;
             
@@ -218,7 +218,7 @@ public class winLose : MonoBehaviour
             if (currentTime>0f  &&  currentTime<2f)
             {
                 Stars = Stars+3;
-                Message.text = "You are fast as a rocket!";
+                Message.text = "Sei veloce come un razzo!";
                 star1.enabled = true;
                 star1ImgOn = true;
                 star2.enabled = true;
@@ -232,7 +232,7 @@ public class winLose : MonoBehaviour
             if (currentTime>2f  &&  currentTime<4f)
             {
                 Stars = Stars+2;
-                Message.text = "You are right";
+                Message.text = "Corretto!";
                 star1.enabled = true;
                 star1ImgOn = true;
                 star2.enabled = true;
@@ -243,7 +243,7 @@ public class winLose : MonoBehaviour
             if (currentTime>4f  &&  currentTime<5f)
             {
                 Stars = Stars+1;
-                Message.text = "You are right";
+                Message.text = "Corretto!";
                 star1.enabled = true;
                 star1ImgOn = true;
                 star2.enabled = false;
@@ -269,7 +269,7 @@ public class winLose : MonoBehaviour
         else
         {
 			//Score = Score;
-            Message.text = "You are Wrong!";
+            Message.text = "Hai sbagliato!";
             isRacing = false;
             //currentTime = 0f;
            
