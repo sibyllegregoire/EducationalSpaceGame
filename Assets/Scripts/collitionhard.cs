@@ -145,7 +145,7 @@ public class collitionhard : MonoBehaviour
             if (currentTime>0f  &&  currentTime<3f)
             {
                 Stars = Stars+3;
-                Message.text = "You are as fast as a rocket!";
+                Message.text ="Sei veloce come un razzo!";
                 star1.enabled = true;
                 star1ImgOn = true;
                 star2.enabled = true;
@@ -157,7 +157,7 @@ public class collitionhard : MonoBehaviour
             if (currentTime>3f  &&  currentTime<5f)
             {
                 Stars = Stars+2;
-                Message.text = "You are right";
+                Message.text = "Corretto";
                 star1.enabled = true;
                 star1ImgOn = true;
                 star2.enabled = true;
@@ -169,7 +169,7 @@ public class collitionhard : MonoBehaviour
             if (currentTime>5f  &&  currentTime<8f)
             {
                 Stars = Stars+1;
-                Message.text = "You are right";
+                Message.text = "Corretto";
                 star1.enabled = true;
                 star1ImgOn = true;
                 star2.enabled = false;
@@ -196,7 +196,7 @@ public class collitionhard : MonoBehaviour
         else
         {
 			//Score = Score;
-            Message.text = "You are Wrong!";
+            Message.text = "Hai sbagliato!";
             isRacing = false;
             //currentTime = 0f;
             //Time.timeScale = 0f;
@@ -233,7 +233,7 @@ public class collitionhard : MonoBehaviour
             if (currentTime>0f  &&  currentTime<2f)
             {
                 Stars = Stars+3;
-                Message.text = "You are fast as a rocket!";
+                Message.text = "Sei veloce come un razzo";
                 star1.enabled = true;
                 star1ImgOn = true;
                 star2.enabled = true;
@@ -246,7 +246,7 @@ public class collitionhard : MonoBehaviour
             if (currentTime>2f  &&  currentTime<4f)
             {
                 Stars = Stars+2;
-                Message.text = "You are right";
+                Message.text = "Corretto";
                 star1.enabled = true;
                 star1ImgOn = true;
                 star2.enabled = true;
@@ -259,7 +259,7 @@ public class collitionhard : MonoBehaviour
             if (currentTime>4f  &&  currentTime<5f)
             {
                 Stars = Stars+ 1;
-                Message.text = "You are right";
+                Message.text = "Hai sbagliato!";
                 star1.enabled = true;
                 star1ImgOn = true;
                 star2.enabled = false;
@@ -287,7 +287,7 @@ public class collitionhard : MonoBehaviour
         else
         {
 			Score = Score;
-            Message.text = "You are Wrong!";
+            Message.text = "Hai sbagliato!";
             //txt = GetComponent<Text>();
             isRacing = false;
             count++;
