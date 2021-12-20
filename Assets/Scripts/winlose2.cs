@@ -97,7 +97,7 @@ public class winlose2 : MonoBehaviour
             //StartCoroutine(Wait());
             //Rmv2.Waitother();
             count++;
-
+           
             numberofreload2 = numberofreload2 + 1;
             SceneManager.LoadScene("level2");
 
@@ -113,10 +113,19 @@ public class winlose2 : MonoBehaviour
             }
             else
             {
-                SceneManager.LoadScene("RedoLevel2"); //load Scene 
                 countingwords = 0;
                 Stars = 0;
+                //numberofreload = 0;
                 numberofreload2 = 0;
+                count = 0;
+
+                Score = 0;
+                //RocketMovement.numberofreload = 0;
+
+                SceneManager.LoadScene("RedoLevel2"); //load Scene 
+                //countingwords = 0;
+                //Stars = 0;
+                //numberofreload2 = 0;
             }
         }
 

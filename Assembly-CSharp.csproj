@@ -57,6 +57,7 @@
      <Compile Include="Assets\landinglvl2.cs" />
      <Compile Include="Assets\Scripts\showhide.cs" />
      <Compile Include="Assets\Scripts\WinLevel.cs" />
+     <Compile Include="Assets\Scripts\Game_Flow3.cs" />
      <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
      <Compile Include="Assets\Scripts\NextLevet.cs" />
      <Compile Include="Assets\Scripts\SimpleTimer.cs" />
@@ -85,10 +86,9 @@
      <Compile Include="Assets\Scripts\Select_FoS.cs" />
      <Compile Include="Assets\Scripts\collitionhard.cs" />
      <Compile Include="Assets\Scripts\DialogueManager.cs" />
+     <Compile Include="Assets\Scripts\Image_Changer3.cs" />
      <Compile Include="Assets\Scripts\collisionsoft.cs" />
      <Compile Include="Assets\Scripts\Dialogue.cs" />
-     <Compile Include="Assets\Scripts\Game_Flow3.cs" />
-     <Compile Include="Assets\Scripts\Image_Changer3.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

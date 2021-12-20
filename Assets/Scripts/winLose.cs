@@ -31,6 +31,7 @@ public class winLose : MonoBehaviour
     public Text number;
     public Text annoucement;
     public static int numberofreload;
+    public RocketMovements Rmv;
     
     
     
@@ -64,7 +65,8 @@ public class winLose : MonoBehaviour
 
     // Update is called once per frame
     public void Update()
-	{
+    {
+        numberofreload = RocketMovements.numberofreload;
         if (Game_Flow.Palabras[Image_Changer.GetComponent<SpriteRenderer>().sprite.name]) {
             Soft = 0;
             Hard = 1;
@@ -109,10 +111,15 @@ public class winLose : MonoBehaviour
             }
             else
             {
-                SceneManager.LoadScene("RedoLevel"); //load Scene "RedoLevel"
                 countingwords = 0;
                 Stars = 0;
                 numberofreload = 0;
+                Score = 0;
+                RocketMovements.numberofreload = 0;
+                SceneManager.LoadScene("RedoLevel"); //load Scene "RedoLevel"
+                //countingwords = 0;
+                //Stars = 0;
+                //numberofreload = 0;
             }
         }  
              

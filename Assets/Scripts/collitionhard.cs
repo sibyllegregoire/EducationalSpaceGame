@@ -102,6 +102,14 @@ public class collitionhard : MonoBehaviour
             }
             else
             {
+                countingwords = 0;
+                Stars = 0;
+                //numberofreload = 0;
+                //numberofreload2 = 0;
+                count = 0;
+
+                Score = 0;
+                //RocketMovements.numberofreload = 0;
                 SceneManager.LoadScene("RedoLevel3"); //load Scene "RedoLevel
             }
         }  

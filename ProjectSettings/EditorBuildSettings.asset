@@ -56,4 +56,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RedoLevel2.unity
     guid: ad809fb97e1884f479000046b5b9f4cc
+  - enabled: 1
+    path: Assets/Scenes/Instructions2.unity
+    guid: 4bb95cead2d6f1f4499ae0eac16a207c
+  - enabled: 1
+    path: Assets/Scenes/RedoLevel3.unity
+    guid: 221c73c1224feeb4da9942e162946c2e
+  - enabled: 1
+    path: Assets/Scenes/win.unity
+    guid: 3f2fc5a2ec14a2c4eabcc36f7cb10e33
   m_configObjects: {}
