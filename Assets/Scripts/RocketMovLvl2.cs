@@ -48,6 +48,24 @@ public class RocketMovLvl2 : MonoBehaviour
         {
             YouWin();
         }
+        if(Input.GetKey(KeyCode.UpArrow))
+        {
+            moveUp();
+        }
+        if(Input.GetKey(KeyCode.DownArrow))
+        {
+            moveDown();
+        }
+        
+        if(Input.GetKey(KeyCode.LeftArrow))
+        {
+                    moveLeft();
+        }
+        if(Input.GetKey(KeyCode.RightArrow))
+        {
+            moveRight();
+        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)

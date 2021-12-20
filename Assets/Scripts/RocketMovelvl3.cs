@@ -52,6 +52,20 @@ public class RocketMovelvl3 : MonoBehaviour
         {
             StartCoroutine(Wait());
         }
+        
+        if(Input.GetKey(KeyCode.LeftArrow))
+        {
+            moveLeft();
+        }
+        if(Input.GetKey(KeyCode.RightArrow))
+        {
+            moveRight();
+        }
+        
+        if(Input.GetKey(KeyCode.Space))
+        {
+            shoot();
+        }
     }
     
     public void moveRight()
