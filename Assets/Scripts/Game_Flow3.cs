@@ -33,7 +33,7 @@ public class Game_Flow3 : MonoBehaviour
     public static IDictionary<string, bool> Palabras = new Dictionary<string, bool>();
 
 
-    public static List<int> list1 = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+    //public static List<int> list1 = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
     //public static List<string> list_of_Keys=new List<string>{"gambe","gambero","ganci","gatto","gelato","gallina",
     //"ghiacciolo","ghiande","ghiro","ginocchio","gomitolo","gomme","gorilla","guanto","gufo",
     //"guinzaglio","genio"};
@@ -51,15 +51,7 @@ public class Game_Flow3 : MonoBehaviour
         //rndsound = Random.Range(1, 9);
 
 
-        int n = list1.Count;
-        while (n > 1)
-        {
-            n--;
-            int k = rng.Next(n + 1);
-            int T = list1[k];
-            list1[k] = list1[n];
-            list1[n] = T;
-        }
+       
 
         PlaySoundButton.SetActive(false);
         if (!Palabras.ContainsKey("scarpe"))

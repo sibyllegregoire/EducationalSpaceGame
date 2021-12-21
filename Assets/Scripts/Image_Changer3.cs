@@ -18,6 +18,9 @@ public class Image_Changer3 : MonoBehaviour
     public Sprite image10;
     public Sprite image11;
     public Sprite image12;
+    public List<int> list3;
+    private GameManager _manager;
+    public static System.Random rng = new System.Random();
 
     
     //public List<string> list_of_string_already_used;
@@ -25,12 +28,12 @@ public class Image_Changer3 : MonoBehaviour
     //"guinzaglio","genio"};
     
     
-    public static System.Random rng = new System.Random();
+    //public static System.Random rng = new System.Random();
 
     // Start is called before the first frame update
     void Start()
     {
-        int rndaudio = Random.Range(1, 10);
+        //int rndaudio = Random.Range(1, 10);
         //Debug.Log(rndaudio);
 
 
@@ -42,13 +45,17 @@ public class Image_Changer3 : MonoBehaviour
         //GetComponent<SpriteRenderer>().sprite = result;
 
         //list_of_Keys2.Remove(name_of_image);
+        
+        _manager = GameObject.FindObjectOfType<GameManager>();
+        list3 = _manager.list3public;
+        Debug.Log(list3[collitionhard.countingwords]);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        string name_of_image = "image" + Game_Flow3.list1[Game_Flow3.textPointer];
+        string name_of_image = "image" + list3[collitionhard.countingwords];
         Sprite result = (Sprite)this.GetType().GetField(name_of_image).GetValue(this);
         GetComponent<SpriteRenderer>().sprite = result;
 

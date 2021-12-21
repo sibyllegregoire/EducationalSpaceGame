@@ -2110,6 +2110,7 @@ MonoBehaviour:
   image10: {fileID: 21300000, guid: 2761568408112e14896b8136031fc685, type: 3}
   image11: {fileID: 21300000, guid: 956e477d72384d746a7e71dd831047f3, type: 3}
   image12: {fileID: 21300000, guid: 5ef770315021ae241914238ead7f6963, type: 3}
+  list3: 
 --- !u!114 &1071444564
 MonoBehaviour:
   m_ObjectHideFlags: 0
