@@ -123,7 +123,7 @@ public class Game_Flow : MonoBehaviour
 
         //Debug.Log(rndsound);
         //if (winLose.countingwords != rndsound) TODO for selecting randon numb for reproducing sound
-        if (RocketMovements.numberofreload != 8)
+        if (winLose.countingwords != 9)
         {
 
         Word_Controller.GetComponent<TextMesh>().text = Image_Changer.GetComponent<SpriteRenderer>().sprite.name;
