@@ -33,7 +33,7 @@ public class Game_Flow3 : MonoBehaviour
     public static IDictionary<string, bool> Palabras = new Dictionary<string, bool>();
 
 
-    public static List<int> list1 = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27 };
+    public static List<int> list1 = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
     //public static List<string> list_of_Keys=new List<string>{"gambe","gambero","ganci","gatto","gelato","gallina",
     //"ghiacciolo","ghiande","ghiro","ginocchio","gomitolo","gomme","gorilla","guanto","gufo",
     //"guinzaglio","genio"};
