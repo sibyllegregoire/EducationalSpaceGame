@@ -24,19 +24,22 @@ public class Image_Changer : MonoBehaviour
     public Sprite image16;
     public Sprite image17;
     public Sprite image18;
-    
+    public List<int> list1;
+    private GameManager _manager;
+    public static System.Random rng = new System.Random();
+        
     //public List<string> list_of_string_already_used;
     //public static List<string> list_of_Keys2=new List<string>{"gambe","gambero","ganci","gatto","gelato","gallina", "ghiacciolo","ghiande","ghiro","ginocchio","gomitolo","gomme","gorilla","guanto","gufo",
     //"guinzaglio","genio"};
     
     
-    public static System.Random rng = new System.Random();
+    //public static System.Random rng = new System.Random();
 
     // Start is called before the first frame update
     void Start()
     {
-        int rndaudio = Random.Range(1, 10);
-        Debug.Log(rndaudio);
+        //int rndaudio = Random.Range(1, 10);
+        //Debug.Log(rndaudio);
 
 
         //int random_number = rng.Next(1,winLose.countingwords+1);
@@ -47,13 +50,20 @@ public class Image_Changer : MonoBehaviour
         //GetComponent<SpriteRenderer>().sprite = result;
 
         //list_of_Keys2.Remove(name_of_image);
+        _manager = GameObject.FindObjectOfType<GameManager>();
+        list1 = _manager.list1public;
+        Debug.Log(list1[winLose.countingwords]);
+
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        string name_of_image = "image" + Game_Flow.list1[Game_Flow.textPointer];
+        
+        string name_of_image = "image" + list1[winLose.countingwords];
+        Debug.Log(name_of_image);
         Sprite result = (Sprite)this.GetType().GetField(name_of_image).GetValue(this);
         GetComponent<SpriteRenderer>().sprite = result;
 

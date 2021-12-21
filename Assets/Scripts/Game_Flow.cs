@@ -5,6 +5,8 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.Android;
+using UnityEngine.SceneManagement;
 
 
 
@@ -50,15 +52,17 @@ public class Game_Flow : MonoBehaviour
         //rndsound = Random.Range(1, 9);
 
         
-        int n = list1.Count;
-        while (n > 1)
-        {
-        n--;
-        int k = rng.Next(n + 1);
-        int T = list1[k];
-        list1[k] = list1[n];
-        list1[n] = T; 
-        }
+       //int n = list1.Count;
+              //while (n > 1)
+              //{
+                //  n--;
+                  //int k = rng.Next(n + 1);
+                  //int T = list1[k];
+                  //list1[k] = list1[n];
+                  //list1[n] = T; 
+              //}
+      
+              
 
         PlaySoundButton.SetActive(false);
         if (!Palabras.ContainsKey("gambe"))
@@ -123,6 +127,7 @@ public class Game_Flow : MonoBehaviour
 
         //Debug.Log(rndsound);
         //if (winLose.countingwords != rndsound) TODO for selecting randon numb for reproducing sound
+        //StartCoroutine(Wait());
         if (winLose.countingwords != 9)
         {
 
@@ -140,7 +145,18 @@ public class Game_Flow : MonoBehaviour
 
         }
     }
-    
+    IEnumerator Wait()
+    {
+        //rot = 0;
+        //Debug.Log("Delay");
+        //landing();
+        yield return new WaitForSeconds(2);
+        //SceneManager.LoadScene("SampleScene");
+        //numberofreload = numberofreload + 1;
+        
+        
+        //transform.position = position0;
+    }
 
 
 }
