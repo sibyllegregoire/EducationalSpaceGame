@@ -82,6 +82,7 @@
      <Compile Include="Assets\Scripts\collitionhard.cs" />
      <Compile Include="Assets\Scripts\DialogueManager.cs" />
      <Compile Include="Assets\Scripts\Image_Changer3.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\collisionsoft.cs" />
      <Compile Include="Assets\Scripts\Dialogue.cs" />
  <Reference Include="UnityEngine">
